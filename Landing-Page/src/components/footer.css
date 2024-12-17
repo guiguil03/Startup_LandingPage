@@ -1,0 +1,28 @@
+/* Conteneur du footer */
+.footer {
+  background-color: #343a40; /* Couleur sombre pour le fond */
+  color: #ffffff; /* Texte blanc */
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+/* Liens dans le footer */
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Effet au survol des liens */
+.footer a:hover {
+  color: #dc3545; /* Changer la couleur des liens au survol */
+}
+
+/* Section de copyright */
+.footer .copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
