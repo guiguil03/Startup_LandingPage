@@ -5,14 +5,17 @@ const notion = () => {
   return (
     <div className="container">
       <div className="text-section">
-        <h1> C'est quoi XXXXX</h1>
+        <h1>
+          {" "}
+          C'est quoi <strong>UNITY</strong>
+        </h1>
         <p>
-          XXXXX est une application de running social qui révolutionne la façon
+          Unity est une application de running social qui révolutionne la façon
           dont les coureurs se connectent. En plus de permettre l’enregistrement
-          de vos courses, XXXXX vous aide à rencontrer d’autres passionnés de
+          de vos courses, Unity vous aide à rencontrer d’autres passionnés de
           course à pied en fonction de votre niveau, de vos centres d’intérêt et
           bien plus encore. Avec un focus sur l’aspect social et la visibilité
-          des autres utilisateurs, XXXXX transforme chaque course en une
+          des autres utilisateurs, Unity transforme chaque course en une
           opportunité de partager, d’échanger et de tisser des liens
         </p>
       </div>

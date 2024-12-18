@@ -3,14 +3,10 @@ import React from "react";
 function App() {
   return (
     <div className="app-container">
-      <header className="header">
+      <nav className="header">
         {/* Logo Aligné à Gauche */}
         <div className="logo-container">
-          <img
-            src="../assets/téléchargement.jpg"
-            alt="Logo"
-            className="logo-image"
-          />
+          <img src="../../public/assets/logo.png" className="logo-image" />
         </div>
 
         {/* Texte Centré */}
@@ -18,7 +14,7 @@ function App() {
 
         {/* Bouton Aligné à Droite */}
         <button className="header-button">Inscription - Connexion</button>
-      </header>
+      </nav>
     </div>
   );
 }

@@ -6,17 +6,20 @@
   justify-content: center;
   width: 100%;
   height: 700px;
+  background-image: url("../../public/assets/fond.jpg"); /* Remplacer par le chemin de votre image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+
   /* Pleine hauteur */
 }
 
-/* Conteneur des colonnes */
 .row-container {
   display: flex;
   width: 100%;
   flex-wrap: wrap; /* Permet aux éléments de s'ajuster sur de petits écrans */
 }
 
-/* Colonne de gauche : image */
 .image-column {
   flex: 1;
   display: flex;
@@ -39,23 +42,23 @@
 /* Image primaire (téléphone) */
 .phone-image {
   width: 100%;
-  max-width: 500px; /* Largeur maximale */
+  max-width: 800px; /* Largeur maximale */
   height: auto; /* Ajuste la hauteur automatiquement */
   mix-blend-mode: multiply; /* Effet de mélange */
   transition: transform 0.6s ease; /* Animation fluide */
   transform-origin: center;
-  transform: rotate3d(1, 1, 0, 20deg); /* Rotation en 3D */
+  transform: rotate3d(1, 10, 0, 40deg); /* Rotation en 3D */
 }
 
 /* Image secondaire (carte) */
 .map-image {
-  width: 100%;
-  max-width: 190px;
+  width: 140%;
+  max-width: 210px;
   height: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -48%) rotate3d(1, 1, 0, -20deg); /* Rotation inverse */
+  transform: translate(-50%, -48%) rotate3d(1, 10, 0, -40deg); /* Rotation inverse */
   border-radius: 30px;
   transition: transform 0.6s ease; /* Animation fluide */
 }
@@ -75,6 +78,7 @@
   font-weight: bold;
   margin-bottom: 1.5rem;
   font-size: 2rem;
+  color: white;
 }
 
 /* Bouton */
@@ -89,36 +93,49 @@
 }
 
 .action-button:hover {
-  background-color: #5a6268; /* Gris plus foncé au survol */
+  background-color: #5a6268;
 }
-
-/* Media Queries pour rendre les éléments responsive */
-@media (max-width: 768px) {
-  .page-container {
-    height: auto; /* Ajuste la hauteur du conteneur sur les petits écrans */
-    padding: 1rem;
-  }
-
-  .row-container {
-    flex-direction: column; /* Aligne les éléments en colonne sur les petits écrans */
-  }
-
-  .image-column {
-    height: auto; /* Ajuste la hauteur de la colonne d'image */
-    width: 100%;
-  }
-
-  .phone-image {
-    width: 80%; /* Ajuste la taille de l'image sur les petits écrans */
+@media (max-width: 824px) {
+  phone-image {
+    width: 20%;
     max-width: 400px;
     margin-bottom: 1rem;
   }
 
   .map-image {
-    width: 30%;
+    width: 35%;
+    max-width: 170px;
+    height: 80%;
+    transform: translate(-80%, -50%) rotate3d(1, 1, 0, -10deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .row-container {
+    flex-direction: column;
+  }
+
+  .image-column {
+    height: auto;
+    width: 100%;
+  }
+
+  .phone-image {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+
+  .map-image {
+    width: 35%;
     max-width: 160px;
     height: 80%;
-    transform: translate(-50%, -48%) rotate3d(1, 1, 0, -10deg); /* Moins de rotation pour les petits écrans */
+    transform: translate(-80%, -50%) rotate3d(1, 1, 0, -10deg);
   }
 
   .text-column {
@@ -127,10 +144,10 @@
   }
 
   .title {
-    font-size: 1.5rem; /* Réduit la taille du titre sur les petits écrans */
+    font-size: 1.5rem;
   }
 
   .action-button {
-    width: 100%; /* Bouton plein largeur sur petits écrans */
+    width: 100%;
   }
 }

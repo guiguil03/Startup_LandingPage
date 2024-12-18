@@ -10,7 +10,7 @@ export default function Page() {
           <div className="image-wrapper">
             {/* Image 1 : Téléphone */}
             <img
-              src="../../public/assets/telephone.png"
+              src="../../public/assets/telephone.jpg"
               alt="Téléphone"
               className="phone-image"
             />

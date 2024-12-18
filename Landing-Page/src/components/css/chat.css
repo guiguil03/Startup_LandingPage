@@ -11,10 +11,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px;
 }
 
 .chat {
-  border: 1px solid #ddd;
+  border: 2px solid #dc3545;
   background-color: #f9f9f9;
   width: 60%;
   position: relative;
