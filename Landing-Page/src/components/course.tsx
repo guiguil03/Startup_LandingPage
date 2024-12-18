@@ -1,10 +1,10 @@
 import React from "react";
-import 
+import "./css/course.css";
 export default function course() {
   return (
     <div className="courseContainer">
       <div className="courseImage">
-        <img src="../../public/assets/images.jpg"></img>
+        <img src="../../public/assets/image.jpg"></img>
       </div>
       <div className="courseTitle">
         <h1> Localisez les coureurs proche de vous et courez ensemble</h1>

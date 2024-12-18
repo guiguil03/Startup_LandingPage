@@ -10,11 +10,13 @@
   background-color: #f8f9fa;
 }
 
+.courseImage {
+  width: 100%;
+}
 /* Section de l'image du cours (en pleine largeur) */
 .courseImage img {
   width: 100%;
-  height: auto;
-  object-fit: cover; /* Assure que l'image couvre toute la largeur sans déformation */
+  height: 600px;
   border-radius: 10px;
 }
 
@@ -43,9 +45,8 @@
 }
 
 .courseDescription img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Assure que l'image couvre toute la largeur sans déformation */
+  width: 50%;
+  height: 300px;
   border-radius: 10px;
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./notion.css"; // Import du fichier CSS
+import "./css/notion.css"; // Import du fichier CSS
 
 const notion = () => {
   return (

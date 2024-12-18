@@ -1,3 +1,4 @@
+/* Styles généraux */
 .container {
   display: flex;
   flex-direction: column;
@@ -18,18 +19,6 @@
   background-color: white;
   height: 300px;
   border-radius: 20px;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .text-section {
-    width: 80%;
-    right: 0;
-    margin-bottom: 1rem;
-  }
-  .container {
-    padding: 1rem;
-  }
 }
 
 .sections-container {
@@ -55,7 +44,7 @@
   object-fit: cover;
 }
 
-/* Keep the rotation on all screen sizes */
+/* Image 1 - rotated */
 .img1 {
   transform: rotate(20deg) translateX(340px) translateY(-300px);
   transition: transform 0.5s ease-in-out;
@@ -75,17 +64,6 @@
   z-index: 3;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .dis {
-    width: 80%;
-    transform: translateX(0) translateY(0);
-  }
-  .time-distance {
-    font-size: 2rem;
-  }
-}
-
 .time-distance {
   font-size: 45px;
   font-weight: 900;
@@ -103,15 +81,92 @@
   font-weight: 900;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
+/* Responsive Design avec Media Queries */
+
+/* Pour les écrans de taille moyenne et plus petits (tablette) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .text-section {
+    width: 80%;
+    height: auto;
+    right: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .dis {
+    width: 80%;
+    transform: translateX(0) translateY(0);
+  }
+
+  .time-distance {
+    font-size: 2rem;
+  }
+
   .text {
     font-size: 18px;
     padding: 1rem;
   }
+
+  .img1 {
+    transform: rotate(0) translateX(0) translateY(0);
+    width: 100%;
+  }
+
   .img2 {
     position: relative;
     right: 0;
+    width: 100%;
+  }
+
+  .image-section {
+    height: auto;
+  }
+
+  .info-section {
+    margin-top: 1rem;
+  }
+
+  .dis {
+    width: 90%;
+    transform: none;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .text-section {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .dis {
+    width: 90%;
+    transform: none;
+    margin: 1rem auto; /* Centrer le bloc */
+  }
+
+  .time-distance {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .img1 {
+    transform: rotate(0) translateX(0) translateY(0);
+  }
+
+  .img2 {
     width: 100%;
   }
 }

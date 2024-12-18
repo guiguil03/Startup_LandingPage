@@ -1,0 +1,144 @@
+/* Styles généraux */
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  width: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.circle-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Cercles (avatars) */
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #dc3545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; /* Espacement entre le cercle et le message */
+  position: relative;
+}
+
+.circle p {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Lignes reliant les cercles aux messages */
+.circle-container:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #ddd;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.message {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.message.sent {
+  background-color: #e1f7d5; /* Couleur de fond pour les messages envoyés */
+  align-self: flex-end; /* Les messages envoyés sont alignés à droite */
+  border-radius: 15px 15px 0 15px; /* Bulles arrondies côté droit */
+}
+
+.message.received {
+  background-color: #d1d8e0; /* Couleur de fond pour les messages reçus */
+  align-self: flex-start; /* Les messages reçus sont alignés à gauche */
+  border-radius: 15px 15px 15px 0; /* Bulles arrondies côté gauche */
+}
+
+/* Responsive Design avec Media Queries */
+@media (max-width: 768px) {
+  .chat {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .circle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .message {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .chat__container {
+    margin-top: 1rem;
+  }
+
+  .circle-container:before {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat {
+    width: 100%;
+    left: 0;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .message {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .circle-container:before {
+    height: 30px;
+  }
+
+  .chat__container {
+    margin-top: 1rem;
+  }
+}

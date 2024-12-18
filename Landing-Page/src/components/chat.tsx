@@ -1,26 +1,47 @@
 import React from "react";
-import "./chat.css";
-export default function chat() {
+import "./css/chat.css";
+
+export default function Chat() {
   return (
-    <div>
+    <div className="chat-container">
+      <h1>
+        Rencontrez des passionnés de running et créez des amitiés pour partager
+        chaque foulée
+      </h1>
       <div className="chat">
-        <h1>
-          Rencontrez des passionnés de running et créez des amitiés pour
-          partager chaque foulée
-        </h1>
         <div className="chat__container">
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
+          <div className="circle-container">
+            <div className="circle">
+              <p>A</p>
+            </div>
+            <div className="message received">Salut, comment ça va ?</div>
+          </div>
+
+          <div className="circle-container">
+            <div className="circle">
+              <p>B</p>
+            </div>
+            <div className="message sent">Salut, ça va bien et toi ?</div>
+          </div>
+
+          <div className="circle-container">
+            <div className="circle">
+              <p>A</p>
+            </div>
+            <div className="message received">
+              Ça va, je suis prêt pour la course de demain !
+            </div>
+          </div>
+
+          <div className="circle-container">
+            <div className="circle">
+              <p>B</p>
+            </div>
+            <div className="message sent">
+              Super, j'ai hâte ! On se retrouve à 9h ?
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="text1">
-        <div className="circle"></div>
-        <p> Vous avee repondu a</p>
-        <div className="circle"></div>
-        <p> Je t'ai pas dit mais oui c'est good pour jeudix</p>
       </div>
     </div>
   );
