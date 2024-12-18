@@ -1,5 +1,5 @@
 import React from "react";
-import "./page.css"; // Import du fichier CSS
+import "./css/page.css"; // Import du fichier CSS
 
 export default function Page() {
   return (
@@ -10,17 +10,17 @@ export default function Page() {
           <div className="image-wrapper">
             {/* Image 1 : Téléphone */}
             <img
-              src="../../public/assets/telephone.png"
+              src="../../public/assets/telephone1.png"
               alt="Téléphone"
               className="phone-image"
             />
 
             {/* Image 2 : Carte */}
-            <img
+            {/* <img
               src="../../public/assets/carte.jpg"
               alt="Carte"
               className="map-image"
-            />
+            /> */}
           </div>
         </div>
 

@@ -1,0 +1,97 @@
+.footer {
+  background-color: #363636;
+  color: #ccc;
+  width: auto;
+  padding: 3rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-section h4 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.privacy-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.privacy-link:hover {
+  text-decoration: underline;
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.store-badge {
+  width: 150px;
+  height: auto;
+}
+
+/* Styles responsives */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Une seule colonne */
+  }
+
+  .app-buttons {
+    flex-direction: row; /* Affichage en ligne pour les boutons d'application */
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .store-badge {
+    width: 120px; /* Réduction des badges sur petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer-section h4 {
+    font-size: 0.9rem; /* Réduction de la taille des titres */
+  }
+
+  .footer-section ul li {
+    font-size: 0.85rem; /* Réduction de la taille du texte */
+  }
+}
