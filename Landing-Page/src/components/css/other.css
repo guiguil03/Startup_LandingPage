@@ -3,11 +3,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 2rem;
   background-color: #fff;
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 10px 10px 10px rgb(121, 115, 115);
+  border: 1px solid black;
 }
 
 .text-content {

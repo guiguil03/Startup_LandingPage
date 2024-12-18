@@ -40,6 +40,8 @@
   min-height: 10vh;
   font-family: sans-serif; /* font-sans */
   width: 100%;
+  padding: 10px;
+  border-radius: 30px;
 }
 
 /* Header */

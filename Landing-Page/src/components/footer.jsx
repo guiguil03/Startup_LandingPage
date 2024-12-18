@@ -7,19 +7,22 @@ const Footer = () => {
       <div className="footer-container">
         {/* Section Logo */}
         <div className="footer-logo">
-          <div className="logo-placeholder"></div>
+          <div className="logo-placeholder">
+            <img
+              src="../../public/assets/logo.png"
+              alt="Logo"
+              className="footer-logo"
+            />
+          </div>
           <p>© 2024 XXXX</p>
           <p>Tous droits réservés</p>
-          <a href="/" className="privacy-link">
-            Politique de confidentialité
-          </a>
         </div>
 
         {/* Section Menu */}
         <div className="footer-section">
           <h4>MENU</h4>
           <ul>
-            <li>XXXXXXXX</li>
+            <li>UNIFY</li>
             <li>Abonnements</li>
             <li>Nous contacter</li>
           </ul>
@@ -29,10 +32,9 @@ const Footer = () => {
         <div className="footer-section">
           <h4>SUIVEZ-NOUS</h4>
           <ul>
-            <li>XXXXXXXX</li>
-            <li>XXXXXXXX</li>
-            <li>XXXXXXXX</li>
-            <li>XXXXXXXX</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Linkedin</li>
           </ul>
         </div>
 
