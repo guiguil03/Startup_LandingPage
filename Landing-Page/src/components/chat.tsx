@@ -2,28 +2,28 @@ import "./css/chat.css";
 
 const RunningGroup = () => {
   const profiles = [
-    { name: "FABIEN", image: "https://i.pravatar.cc/100?img=1" },
-    { name: "LÉANA", image: "https://i.pravatar.cc/100?img=2" },
-    { name: "ARMAND", image: "https://i.pravatar.cc/100?img=3" },
-    { name: "LILIAN", image: "https://i.pravatar.cc/100?img=4" },
-    { name: "ISAURE", image: "https://i.pravatar.cc/100?img=5" },
+    { name: "FABIEN", image: "https://i.pravatar.cc/100?img=10" },
+    { name: "LÉANA", image: "https://i.pravatar.cc/100?img=11" },
+    { name: "ARMAND", image: "https://i.pravatar.cc/100?img=12" },
+    { name: "LILIAN", image: "https://i.pravatar.cc/100?img=13" },
+    { name: "QUENTIN", image: "https://i.pravatar.cc/100?img=14" },
   ];
 
   const messages = [
     {
       name: "Armand CLOTAIRE",
       text: "Il y a quelqu’un pour venir courir près du lac ?",
-      image: "https://i.pravatar.cc/50?img=3",
+      image: "https://i.pravatar.cc/50?img=12",
     },
     {
-      name: "Isaure LYRE",
+      name: "Quentin LYRE",
       text: "Carrément ! J’arrive dans 5 minutes !",
-      image: "https://i.pravatar.cc/50?img=5",
+      image: "https://i.pravatar.cc/50?img=14",
     },
     {
       name: "Lilian Orlandi",
       text: "Je peux me joindre à vous ?",
-      image: "https://i.pravatar.cc/50?img=4",
+      image: "https://i.pravatar.cc/50?img=13",
     },
   ];
 
@@ -40,10 +40,6 @@ const RunningGroup = () => {
             <p className="profile-name">{profile.name}</p>
           </div>
         ))}
-        <div className="profile add-profile">
-          <div className="add-button">+</div>
-          <p className="profile-name">AJOUTER</p>
-        </div>
       </div>
 
       <div className="chat-box">

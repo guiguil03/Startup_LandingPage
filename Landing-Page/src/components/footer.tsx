@@ -1,10 +1,13 @@
+<<<<<<< HEAD:Landing-Page/src/components/footer.jsx
 import "./css/footer.css";
+=======
+import "./css/Footer.css";
+>>>>>>> d7f4723ff2beae680ac6c20ab97d527c218f35b8:Landing-Page/src/components/footer.tsx
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Section Logo */}
         <div className="footer-logo">
           <div className="logo-placeholder">
             <img
@@ -17,7 +20,6 @@ const Footer = () => {
           <p>Tous droits réservés</p>
         </div>
 
-        {/* Section Menu */}
         <div className="footer-section">
           <h4>MENU</h4>
           <ul>
@@ -27,13 +29,12 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Section Suivez-nous */}
         <div className="footer-section">
           <h4>SUIVEZ-NOUS</h4>
           <ul>
             <li>Instagram</li>
             <li>Twitter</li>
-            <li>Linkedin</li>
+            <li>Tik Tok</li>
           </ul>
         </div>
 

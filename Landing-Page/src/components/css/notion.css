@@ -19,7 +19,8 @@
   width: 60%;
   left: 100px;
   border: 3px solid rgb(131, 129, 129);
-  box-shadow: 10px 10px 10px rgb(121, 115, 115);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   background-color: white;
   height: auto;
   border-radius: 20px;
@@ -59,7 +60,8 @@
 }
 
 .dis {
-  border: 1px solid black;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   background-color: white;
   width: 70%;
   position: relative;
@@ -72,6 +74,9 @@
   font-weight: 900;
   margin: 1rem 0;
   color: #dc3545;
+}
+p {
+  font-size: 1rem;
 }
 
 .img2 {
@@ -92,9 +97,6 @@
   font-weight: 900;
 }
 
-/* Responsive Design avec Media Queries */
-
-/* Pour les écrans de taille moyenne et plus petits (tablette) */
 @media (max-width: 1024px) {
   .container {
     padding: 1rem;
@@ -160,13 +162,16 @@
   .dis {
     width: 90%;
     transform: none;
-    margin: 1rem auto; /* Centrer le bloc */
+    margin: 1rem auto;
   }
 
   .time-distance {
     font-size: 1.8rem;
   }
-
+  .aligned-section {
+    display: flex;
+    flex-direction: column;
+  }
   .text {
     font-size: 16px;
     padding: 1rem;

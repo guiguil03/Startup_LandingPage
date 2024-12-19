@@ -4,10 +4,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  border-radius: 20px;
   background-color: #fff;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid black;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .text-content {

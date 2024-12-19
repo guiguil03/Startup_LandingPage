@@ -12,12 +12,14 @@ export default function final() {
 
       <div className="hero-content">
         <h1 className="hero-title">COURREZ AVEC UNIFY</h1>
-        <img
-          src="../../public/assets/logo.png"
-          alt="Fond forêt"
-          className="logo-image"
-        />
-        <button className="hero-button">Devenir Bêta-Testeur</button>
+        <div className="superpose">
+          <button className="hero-button">Devenir Bêta-Testeur</button>
+          <img
+            src="../../public/assets/Group 8.png"
+            alt="Fond forêt"
+            className="logo-image"
+          />
+        </div>
       </div>
     </div>
   );
