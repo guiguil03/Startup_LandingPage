@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/final.css";
 export default function final() {
   return (

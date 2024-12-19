@@ -1,10 +1,7 @@
-import React from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import Header from "./components/Header";
-import Page from "./components/Page";
-import Footer from "./components/Footer";
+import Header from "./components/header";
+import Page from "./components/page";
+import Footer from "./components/footer";
 import Notion from "./components/notion";
 import Chat from "./components/chat";
 import Course from "./components/course";
