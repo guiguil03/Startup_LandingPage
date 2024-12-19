@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/page.css"; // Import du fichier CSS
 
 export default function Page() {
