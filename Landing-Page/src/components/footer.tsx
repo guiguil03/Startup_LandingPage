@@ -1,8 +1,4 @@
-<<<<<<< HEAD:Landing-Page/src/components/footer.jsx
 import "./css/footer.css";
-=======
-import "./css/Footer.css";
->>>>>>> d7f4723ff2beae680ac6c20ab97d527c218f35b8:Landing-Page/src/components/footer.tsx
 
 const Footer = () => {
   return (
