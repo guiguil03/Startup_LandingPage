@@ -6,15 +6,15 @@ const notion = () => {
       <div className="aligned-section">
         <div className="text-section">
           <h1>
-            C'est quoi <strong>UNITY</strong>
+            C'est quoi <strong>UNIFY</strong>
           </h1>
           <p>
-            Unity est une application de running social qui révolutionne la
+            Unify est une application de running social qui révolutionne la
             façon dont les coureurs se connectent. En plus de permettre
-            l’enregistrement de vos courses, Unity vous aide à rencontrer
+            l’enregistrement de vos courses, Unify vous aide à rencontrer
             d’autres passionnés de course à pied en fonction de votre niveau, de
             vos centres d’intérêt et bien plus encore. Avec un focus sur
-            l’aspect social et la visibilité des autres utilisateurs, Unity
+            l’aspect social et la visibilité des autres utilisateurs, Unify
             transforme chaque course en une opportunité de partager, d’échanger
             et de tisser des liens{" "}
           </p>
