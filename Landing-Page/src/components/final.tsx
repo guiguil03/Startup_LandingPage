@@ -1,5 +1,11 @@
 import "./css/final.css";
+import { useState } from "react";
+
+import SignupModal from "./signupModal";
+
 export default function final() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="hero-container">
       <div className="hero-background">
@@ -13,7 +19,13 @@ export default function final() {
       <div className="hero-content">
         <h1 className="hero-title">COURREZ AVEC UNIFY</h1>
         <div className="superpose">
-          <button className="hero-button">Devenir Bêta-Testeur</button>
+          <button className="hero-button" onClick={() => setIsModalOpen(true)}>
+            Devenir Beta-Testeur
+          </button>
+          <SignupModal
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+          />
         </div>
       </div>
     </div>

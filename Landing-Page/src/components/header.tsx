@@ -14,7 +14,7 @@ function App() {
         <div className="header-text">Nos Abonnements</div>
 
         <button className="header-button" onClick={() => setIsModalOpen(true)}>
-          Inscription - Connexion
+          Devenir Beta-Testeur
         </button>
       </nav>
 
