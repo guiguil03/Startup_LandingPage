@@ -1,5 +1,4 @@
-import "./css/maps.css"; // Importation du CSS
-
+import "./css/maps.css";
 const MapSection = () => {
   return (
     <div className="map-section-container">
@@ -17,7 +16,7 @@ const MapSection = () => {
         </p>
       </div>
       <div className="map-section">
-        <img src="../../public/assets/photo.png" className=".img-map" />
+        <img src="/assets/photo.png" className=".img-map" />
       </div>
 
       {/* Section carte */}

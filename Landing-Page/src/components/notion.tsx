@@ -19,12 +19,12 @@ const notion = () => {
             et de tisser des liens{" "}
           </p>
         </div>
-        <img src="../../public/assets/fond.png" className="img1" />
+        <img src="/assets/fond.png" className="img1" />
       </div>
 
       <div className="sections-container">
         <div className="info-section">
-          <img src="../../public/assets/coours.jpg" className="img2"></img>
+          <img src="/assets/coours.jpg" className="img2"></img>
           <div className="dis">
             <p className="time-distance">5 KM 45m 26s</p>
           </div>

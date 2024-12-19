@@ -3,11 +3,7 @@ export default function final() {
   return (
     <div className="hero-container">
       <div className="hero-background">
-        <img
-          src="../../public/assets/foret.jpg"
-          alt="Fond forêt"
-          className="hero-image"
-        />
+        <img src="/assets/foret.jpg" alt="Fond forêt" className="hero-image" />
       </div>
 
       <div className="hero-content">
@@ -15,7 +11,7 @@ export default function final() {
         <div className="superpose">
           <button className="hero-button">Devenir Bêta-Testeur</button>
           <img
-            src="../../public/assets/Group 8.png"
+            src="/assets/Group 8.png"
             alt="Fond forêt"
             className="logo-image"
           />

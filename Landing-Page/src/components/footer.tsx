@@ -6,11 +6,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <div className="logo-placeholder">
-            <img
-              src="../../public/assets/logo.png"
-              alt="Logo"
-              className="footer-logo"
-            />
+            <img src="/assets/logo.png" alt="Logo" className="footer-logo" />
           </div>
           <p>© 2024 XXXX</p>
           <p>Tous droits réservés</p>

@@ -18,7 +18,7 @@ const NotificationSection = () => {
         </p>
       </div>
       <div className="image-content">
-        <img src="../../public/assets/Phone.png" />
+        <img src="/assets/Phone.png" />
       </div>
     </section>
   );

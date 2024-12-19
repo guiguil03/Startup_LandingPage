@@ -3,7 +3,7 @@ function App() {
     <div className="app-container">
       <nav className="header">
         <div className="logo-container">
-          <img src="../../public/assets/logo.png" className="logo-image" />
+          <img src="/assets/logo.png" className="logo-image" />
         </div>
 
         <div className="header-text">Nos Abonnements</div>
