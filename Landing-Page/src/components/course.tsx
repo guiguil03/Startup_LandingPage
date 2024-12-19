@@ -4,7 +4,7 @@ const NotificationSection = () => {
   return (
     <section className="notification-section">
       <div className="image-content">
-        <img src="/assets/Phone.png" />
+        <img src="/assets/Phone 1.png" />
       </div>
       <div className="text-content">
         <h2>Personnalisez votre visibilité pour des rencontres sur mesure</h2>

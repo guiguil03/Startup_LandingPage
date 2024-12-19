@@ -2,8 +2,8 @@ import "./css/chat.css";
 
 const RunningGroup = () => {
   const profiles = [
-    { name: "FABIEN", image: "https://i.pravatar.cc/100?img=10" },
-    { name: "LÉANA", image: "https://i.pravatar.cc/100?img=11" },
+    { name: "LÉANA", image: "https://i.pravatar.cc/100?img=10" },
+    { name: "FABIEN", image: "https://i.pravatar.cc/100?img=11" },
     { name: "ARMAND", image: "https://i.pravatar.cc/100?img=12" },
     { name: "LILIAN", image: "https://i.pravatar.cc/100?img=13" },
     { name: "QUENTIN", image: "https://i.pravatar.cc/100?img=14" },
