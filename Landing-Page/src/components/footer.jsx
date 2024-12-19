@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Section Logo */}
         <div className="footer-logo">
           <div className="logo-placeholder">
             <img
@@ -18,7 +17,6 @@ const Footer = () => {
           <p>Tous droits réservés</p>
         </div>
 
-        {/* Section Menu */}
         <div className="footer-section">
           <h4>MENU</h4>
           <ul>
@@ -28,13 +26,12 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Section Suivez-nous */}
         <div className="footer-section">
           <h4>SUIVEZ-NOUS</h4>
           <ul>
             <li>Instagram</li>
             <li>Twitter</li>
-            <li>Linkedin</li>
+            <li>Tik Tok</li>
           </ul>
         </div>
 

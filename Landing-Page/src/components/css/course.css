@@ -39,7 +39,6 @@
   height: auto;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .notification-section {
     flex-direction: column;
