@@ -59,26 +59,25 @@
   height: auto;
 }
 
-/* Styles responsives */
 @media (max-width: 1024px) {
   .footer-container {
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .footer-container {
-    grid-template-columns: 1fr; /* Une seule colonne */
+    grid-template-columns: 1fr;
   }
 
   .app-buttons {
-    flex-direction: row; /* Affichage en ligne pour les boutons d'application */
+    flex-direction: row;
     justify-content: center;
     gap: 1rem;
   }
 
   .store-badge {
-    width: 120px; /* Réduction des badges sur petits écrans */
+    width: 120px;
   }
 }
 
@@ -88,10 +87,10 @@
   }
 
   .footer-section h4 {
-    font-size: 0.9rem; /* Réduction de la taille des titres */
+    font-size: 0.9rem;
   }
 
   .footer-section ul li {
-    font-size: 0.85rem; /* Réduction de la taille du texte */
+    font-size: 0.85rem;
   }
 }

@@ -1,6 +1,4 @@
-import React from "react";
 import "./css/other.css";
-import phoneImage from "."; // Assure-toi que l'image est dans le bon chemin
 
 const NotificationSection = () => {
   return (
