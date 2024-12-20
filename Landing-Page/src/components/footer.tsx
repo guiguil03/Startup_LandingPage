@@ -4,14 +4,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-logo">
-          <div className="logo-placeholder">
-            <img src="/assets/logo.png" alt="Logo" className="footer-logo" />
-          </div>
-          <p>© 2024 XXXX</p>
+        {/* Section Logo et Copyright - Toujours en premier */}
+        <div className="footer-section">
+          <img src="/assets/logo.png" alt="Logo" className="footer-logo" />
+          <p>© 2024 UNIFY</p>
           <p>Tous droits réservés</p>
         </div>
 
+        {/* Section Menu - Position centrale */}
         <div className="footer-section">
           <h4>MENU</h4>
           <ul>
@@ -21,6 +21,7 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Section Réseaux Sociaux */}
         <div className="footer-section">
           <h4>SUIVEZ-NOUS</h4>
           <ul>
@@ -30,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Section Vous commencez */}
+        {/* Section Téléchargement - Toujours en dernier */}
         <div className="footer-section">
           <h4>VOUS COMMENCEZ ?</h4>
           <ul>

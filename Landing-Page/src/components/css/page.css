@@ -58,6 +58,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
+  padding-bottom: 62px;
 }
 
 .text-section,
@@ -186,9 +187,5 @@
 
   .title {
     font-size: 1.5rem;
-  }
-
-  .action-button {
-    width: 100%;
   }
 }

@@ -11,9 +11,9 @@ function App() {
           <img src="/assets/logo.png" className="logo-image" alt="Logo" />
         </div>
 
-        <div className="header-text">Nos Abonnements</div>
+        <div className="header-text"></div>
 
-        <button className="header-button" onClick={() => setIsModalOpen(true)}>
+        <button className="hero-button" onClick={() => setIsModalOpen(true)}>
           Devenir Beta-Testeur
         </button>
       </nav>

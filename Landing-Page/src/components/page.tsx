@@ -9,11 +9,10 @@ export default function Page() {
     <div className="page-container">
       <div className="row-container">
         <div className="text-column">
-          <h1 className="title1">REJOINT MON ALLURE À TON ALLURE!</h1>
-          <button
-            className="action-button "
-            onClick={() => setIsModalOpen(true)}
-          >
+          <h1 className="title1">
+            Votre motivation, vos partenaires, vos parcours : tous réunis !
+          </h1>
+          <button className="hero-button " onClick={() => setIsModalOpen(true)}>
             Devenir Beta-Testeur
           </button>
           <SignupModal

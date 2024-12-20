@@ -1,194 +1,101 @@
 /* Container principal */
 .running-group-container {
-  font-family: Arial, sans-serif;
-  color: #333;
-  padding: 20px;
-  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
 }
 
 .title-red,
 .footer-red {
   color: #e91e63;
-  font-size: 18px;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
 }
 
+/* Section profils */
 .profile-section {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  gap: 30px;
-  flex-wrap: wrap;
-
-  height: auto; /* Hauteur automatique pour permettre l'empilement */
-  width: 70%;
-  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  background: white;
   border: 2px solid #e0e0e0;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  padding: 10px; /* Ajout de padding pour un meilleur espacement */
-}
-
-.profile-section div {
-  margin: 10px; /* Espacement réduit pour éviter les débordements */
-}
-
-.add-profile {
-  margin: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .avatar {
-  width: 70px;
-  height: 70px;
+  width: clamp(50px, 10vw, 70px);
+  height: clamp(50px, 10vw, 70px);
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #ddd;
 }
 
 .profile-name {
-  font-size: 12px;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
   color: #555;
-  margin-top: 5px;
   font-weight: bold;
+  text-align: center;
 }
 
-.add-profile .add-button {
-  width: 70px;
-  height: 70px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
-}
-
+/* Chat box */
 .chat-box {
   background-color: #2b2b2b;
   border-radius: 10px;
-  color: white;
-  padding: 20px;
+  padding: clamp(1rem, 3vw, 1.5rem);
   max-width: 600px;
-  margin: 0 auto 30px;
-  text-align: left;
+  margin: 0 auto 2rem;
 }
 
 .chat-message {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .chat-avatar {
-  width: 40px;
-  height: 40px;
+  width: clamp(32px, 8vw, 40px);
+  height: clamp(32px, 8vw, 40px);
   border-radius: 50%;
   object-fit: cover;
 }
 
 .chat-content {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
 }
 
 .chat-name {
   color: #e91e63;
   font-weight: bold;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  margin-bottom: 0.25rem;
 }
 
 .chat-text {
-  font-size: 12px;
   color: #ddd;
-  margin: 3px 0 0;
-}
-
-/* Responsivité */
-@media (max-width: 1024px) {
-  .profile-section {
-    width: 90%; /* Étend la section sur mobile et tablette */
-  }
-  .chat-box {
-    max-width: 90%; /* Étend la boîte de chat */
-  }
-}
-
-@media (max-width: 768px) {
-  .profile-section {
-    flex-direction: column; /* Empile les profils */
-    gap: 20px;
-    padding: 15px;
-  }
-
-  .avatar {
-    width: 60px; /* Réduit les tailles d'avatar */
-    height: 60px;
-  }
-
-  .chat-avatar {
-    width: 35px;
-    height: 35px;
-  }
-
-  .chat-box {
-    max-width: 100%; /* Étend à la largeur complète */
-    padding: 15px;
-  }
-
-  .chat-message {
-    gap: 8px; /* Réduit les espaces entre messages */
-  }
-
-  .chat-name {
-    font-size: 13px;
-  }
-
-  .chat-text {
-    font-size: 11px;
-  }
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  line-height: 1.4;
 }
 
 @media (max-width: 480px) {
-  .title-red,
-  .footer-red {
-    font-size: 16px; /* Réduction des tailles de titre */
-    margin-bottom: 15px;
-  }
-
   .profile-section {
-    width: 100%; /* Prend toute la largeur */
-    gap: 15px;
-  }
-
-  .avatar {
-    width: 50px;
-    height: 50px;
-  }
-
-  .chat-avatar {
-    width: 30px;
-    height: 30px;
-  }
-
-  .chat-box {
-    padding: 10px;
-  }
-
-  .chat-name {
-    font-size: 12px;
-  }
-
-  .chat-text {
-    font-size: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 0.75rem;
+    gap: 1rem;
   }
 }

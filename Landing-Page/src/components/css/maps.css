@@ -1,7 +1,7 @@
 .map-section-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 2rem;
   padding: 2rem;
   width: 100%;
@@ -11,90 +11,37 @@
 
 .text-section {
   flex: 1;
-  border: none;
-  padding: 10px;
+  padding: 1.5rem;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #dc3545;
-  margin-bottom: 1rem;
-}
-
-.description {
-  font-size: 1rem;
-  color: #333;
+  border-radius: 10px;
+  max-width: 50%;
 }
 
 .map-section {
   flex: 1;
   display: flex;
   justify-content: center;
+  max-width: 50%;
 }
 
 .map-section img {
   width: 100%;
-  max-width: 540px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1024px) {
-  .map-section-container {
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .title {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .text-section {
-    position: relative;
-    left: 10px;
-  }
-
-  .description {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: center;
-  }
-
-  .map-section img {
-    max-width: 90%;
-    border-radius: 10px;
-  }
-}
-
+/* Ne change la disposition qu'en mobile */
 @media (max-width: 768px) {
   .map-section-container {
-    gap: 1rem;
+    flex-direction: column;
     padding: 1rem;
   }
 
-  .title {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  .text-section {
-    position: relative;
-    left: 10px;
-  }
-
-  .description {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  .map-section img {
+  .text-section,
+  .map-section {
     max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    text-align: center;
   }
 }
